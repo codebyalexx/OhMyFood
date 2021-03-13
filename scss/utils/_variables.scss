@@ -3,10 +3,13 @@ $bck-footer: #353535;
 $bck-primary: #F6F6F6;
 $bck-secondary: #EAEAEA;
 $bck-highlight: #9356DC;
+$bck-highlight-light: lighten($bck-highlight, 40%);
+$bck-new-restaurant: #99E2D0;
 
 $font-color-main: #000;
 $font-color-secondary: #353535;
 $font-color-alt: #fff;
+$font-color-new-restaurant: darken($bck-new-restaurant, 40%);
 
 
 $font-family-default: 'Roboto', sans-serif;

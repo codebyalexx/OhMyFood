@@ -1,0 +1,67 @@
+.restaurants {
+    background-color: $bck-primary;
+    padding: 55px 20px 65px 20px;
+
+    &__header h2{
+        color: $font-color-main;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__element {
+        position: relative;
+        background-color: white;
+        border-radius: 0 0 15px 15px;
+
+        &:not(:nth-child(1)) {
+            margin-top: 20px;
+        }
+
+        &__newlabel {
+            background-color: $bck-new-restaurant;
+            color: $font-color-new-restaurant;
+            position: absolute;
+            top: 13px;
+            right: 11px;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 2px;
+            padding: 6px 12px;
+        }
+
+        &__banner {
+            height: 175px;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+
+        &__content {
+            list-style-type: none;
+            display: block;
+            margin: 16px 13px 0 13px;
+            position: relative;
+
+            &__props {
+                padding-bottom: 16px;
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    padding-bottom: 5px;
+                }
+
+                p {
+                    font-weight: 200;
+                    font-size: 17px;
+                }
+
+                i {
+                    position: absolute;
+                    top: 23px;
+                    right: 24px;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
