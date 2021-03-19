@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&family=Shrikhand&display=swap");
+body {
+  margin: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.header__top {
+  background-color: #fff;
+  text-align: center;
+  margin: 15px 0;
+}
+.header__top__goback {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 25px;
+  color: #353535;
+}
+.header__top__goback--hidden {
+  display: none;
+}
+.header__top__title {
+  font-family: "Shrikhand", cursive;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+}
+.header__location {
+  background-color: #EAEAEA;
+  text-align: center;
+}
+.header__location__label {
+  padding: 15px 0;
+  color: #353535;
+}
+.header__location__label i {
+  padding-right: 15px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 25px 0 30px 25px;
+  color: #fff;
+}
+.footer__title {
+  text-decoration: none;
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+}
+.footer__elements {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.footer__elements__element:not(:nth-child(1)) {
+  margin-top: 7px;
+}
+.footer__elements__element__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__elements__element__link i {
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

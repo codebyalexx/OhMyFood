@@ -1,0 +1,33 @@
+.footer {
+    background-color: $bck-footer;
+    padding: 25px 0 30px 25px;
+    color: $font-color-alt;
+
+    &__title {
+        text-decoration: none;
+        font-family: $font-family-title;
+        font-size: 18px;
+    }
+
+    &__elements {
+        list-style: none;
+        padding-inline-start: 0;
+
+        &__element {
+            &:not(:nth-child(1)) {
+                margin-top: 7px;
+            }
+
+            &__link {
+                text-decoration: none;
+                color: $font-color-alt;
+                font-size: 16px;
+                font-weight: 700;
+
+                i {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

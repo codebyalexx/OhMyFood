@@ -1,0 +1,41 @@
+// Couches sélecteurs : 1 0 0 0 0
+.header {
+    &__top {
+        background-color: $bck-document;
+        text-align: center;
+        margin: 15px 0;
+
+        &__goback {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            font-size: 25px;
+            color: $font-color-secondary;
+
+            &--hidden {
+                display: none;
+            }
+        }
+
+        &__title {
+            font-family: $font-family-title;
+            color: $font-color-main;
+            font-size: 30px;
+            text-decoration: none;
+        }
+    }
+
+    &__location {
+        background-color: $bck-secondary;
+        text-align: center;
+
+        &__label {
+            padding: 15px 0;
+            color: $font-color-secondary;
+
+            i {
+                padding-right: 15px;
+            }
+        }
+    }
+}
