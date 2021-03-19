@@ -11,10 +11,13 @@
 
     &__list {
         list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
 
         &__element {
             position: relative;
             height: 75px;
+            flex: 1 0 100%;
 
             &:not(:nth-child(1)) {
                 margin-top: 23px;
@@ -53,6 +56,17 @@
                     i {
                         padding-right: 25px;
                     }
+                }
+            }
+
+            @media only screen and (min-width: 700px) {
+                flex: 1 0 calc(45% - 20px);
+                width: calc(45% - 20px);
+                //max-width: calc(45% - 20px);
+                margin-top: 20px;
+
+                &:nth-child(2n) {
+                    margin-left: 20px;
                 }
             }
         }
