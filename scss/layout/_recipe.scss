@@ -1,4 +1,9 @@
 .recipe {
+  flex: 1 0 100%;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
   &__title {
     font-size: 16px;
     text-transform: uppercase;
@@ -80,4 +85,17 @@
       }
     }
   }
+
+  @media only screen and (min-width: 1040px) {
+    flex: 1 0 30%;
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+  }
+}
+
+.recipe-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
