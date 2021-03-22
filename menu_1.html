@@ -1,160 +1,255 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À la française - OhMyFood</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__top">
-            <a href="index.html" class="header__top__goback">
-                <i class="fas fa-arrow-left"></i>
-            </a>
-            <a href="#!" class="header__top__title">ohmyfood</a>
-        </div>
+      <div class="header__top">
+        <a href="index.html" class="header__top__goback">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <a href="#!" class="header__top__title">ohmyfood</a>
+      </div>
     </header>
-    <main>
-        <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image du restaurant">
-        <div class="main-container">
-            <header>
-                <h1>À la française</h1>
-                <i></i>
-            </header>
-            <section class="recipe">
-                <h2 class="recipe__title">Entrées</h2>
-                <div class="recipe__separator"></div>
-                <article>
-                    <ul class="recipe__list">
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Tartare de poulpe acidulé</h3>
-                            <p class="recipe__list__item__caption">Aux zests d'orange</p>
-                            <a href="#!" class="recipe__list__item__price">25€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Velouté de légumes d'antan</h3>
-                            <p class="recipe__list__item__caption">Carotte, panais, topinambour</p>
-                            <a href="#!" class="recipe__list__item__price">35€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Soupe à l'oignon</h3>
-                            <p class="recipe__list__item__caption">Revisitée</p>
-                            <a href="#!" class="recipe__list__item__price">20€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <section class="recipe">
-                <h2 class="recipe__title">Plats</h2>
-                <div class="recipe__separator"></div>
-                <article>
-                    <ul class="recipe__list">
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Coquilles Saint-Jacques</h3>
-                            <p class="recipe__list__item__caption">Accompagnées d'une purée de panais</p>
-                            <a href="#!" class="recipe__list__item__price">40€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Magret de canard</h3>
-                            <p class="recipe__list__item__caption">Et parmentier de pommes de terres</p>
-                            <a href="#!" class="recipe__list__item__price">35€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Pigeonneau d'Ille-et-Villaine</h3>
-                            <p class="recipe__list__item__caption">Sur son lit de gnocchis aux légumes</p>
-                            <a href="#!" class="recipe__list__item__price">44€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <section class="recipe">
-                <h2 class="recipe__title">Desserts</h2>
-                <div class="recipe__separator"></div>
-                <article>
-                    <ul class="recipe__list">
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Pétales de violettes glacés</h3>
-                            <p class="recipe__list__item__caption">Et purée de noisettes</p>
-                            <a href="#!" class="recipe__list__item__price">18€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Fondant au chocolat</h3>
-                            <p class="recipe__list__item__caption">Revisité</p>
-                            <a href="#!" class="recipe__list__item__price">22€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                        <li class="recipe__list__item">
-                            <h3 class="recipe__list__item__title">Millefeuille croustillant</h3>
-                            <p class="recipe__list__item__caption">Myrtilles et pâte d'amande</p>
-                            <a href="#!" class="recipe__list__item__price">23€</a>
-                            <div class="recipe__list__item__selection">
-                                <i></i>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <footer>
-                <button class="btn">Commander</button>
-            </footer>
-        </div>
+    <main class="main">
+      <div class="main__banner"></div>
+      <!--
+        -->
+      <div class="main__container">
+        <header class="main__container__header">
+          <h1>À la française</h1>
+          <i class="far fa-heart"></i>
+        </header>
+        <section class="recipe">
+          <h2 class="recipe__title">Entrées</h2>
+          <div class="recipe__separator"></div>
+          <article>
+            <ul class="recipe__list">
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Tartare de poulpe acidulé
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Aux zests d'orange
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">25€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Velouté de légumes d'antan
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Carotte, panais, topinambour
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">35€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Soupe à l'oignon
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Revisitée
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">20€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="recipe">
+          <h2 class="recipe__title">Plats</h2>
+          <div class="recipe__separator"></div>
+          <article>
+            <ul class="recipe__list">
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Coquilles Saint-Jacques
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Accompagnées d'une purée de panais
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">40€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Magret de canard
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Et partmentier de pommes de terres
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">35€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Pigeonneau d'Ille-et-Vilaine
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Sur son lit de gnocchis aux légumes
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">44€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="recipe">
+          <h2 class="recipe__title">Desserts</h2>
+          <div class="recipe__separator"></div>
+          <article>
+            <ul class="recipe__list">
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Pétales de violettes glacés
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Et purée de noisettes
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">18€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Fondant au chocolat
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Revisité
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">22€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe__list__item">
+                <div class="recipe__list__item__wrapper">
+                  <h3 class="recipe__list__item__wrapper__title">
+                    Milefeuille croustillant
+                  </h3>
+                  <p class="recipe__list__item__wrapper__caption">
+                    Myrtilles et pâte d'amande
+                  </p>
+                </div>
+                <div class="recipe__list__item__pricing">
+                  <p href="#!" class="recipe__list__item__pricing__text">23€</p>
+                </div>
+                <div class="recipe__list__item__selection">
+                  <div class="recipe__list__item__selection__iconwrapper">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <footer class="main__container__footer">
+          <button class="btn">Commander</button>
+        </footer>
+      </div>
     </main>
     <footer class="footer">
-        <p class="footer__title">ohmyfood</p>
-        <ul class="footer__elements">
-            <li class="footer__elements__element">
-                <a href="#!" class="footer__elements__element__link">
-                    <i class="fas fa-utensils footer__elements__element__link__icon"></i>
-                    Proposer un restaurant
-                </a>
-            </li>
-            <li class="footer__elements__element">
-                <a href="#!" class="footer__elements__element__link">
-                    <i class="fas fa-hands-helping footer__elements__element__link__icon"></i>
-                    Devenir partenaire
-                </a>
-            </li>
-            <li class="footer__elements__element">
-                <a href="#!" class="footer__elements__element__link">
-                    Mentions légales
-                </a>
-            </li>
-            <li class="footer__elements__element">
-                <a href="#!" class="footer__elements__element__link">
-                    Contact
-                </a>
-            </li>
-        </ul>
+      <p class="footer__title">ohmyfood</p>
+      <ul class="footer__elements">
+        <li class="footer__elements__element">
+          <a href="#!" class="footer__elements__element__link">
+            <i
+              class="fas fa-utensils footer__elements__element__link__icon"
+            ></i>
+            Proposer un restaurant
+          </a>
+        </li>
+        <li class="footer__elements__element">
+          <a href="#!" class="footer__elements__element__link">
+            <i
+              class="fas fa-hands-helping footer__elements__element__link__icon"
+            ></i>
+            Devenir partenaire
+          </a>
+        </li>
+        <li class="footer__elements__element">
+          <a href="#!" class="footer__elements__element__link">
+            Mentions légales
+          </a>
+        </li>
+        <li class="footer__elements__element">
+          <a href="#!" class="footer__elements__element__link"> Contact </a>
+        </li>
+      </ul>
     </footer>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-</body>
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </body>
 </html>

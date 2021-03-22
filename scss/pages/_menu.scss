@@ -1,0 +1,42 @@
+.main {
+  &__banner {
+    height: 256px;
+    width: 100%;
+    background: url('./../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+    background-size: cover;
+    z-index: -9999;
+  }
+
+  &__container {
+    margin-top: calc(220px - 256px);
+    background-color: $bck-primary;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    z-index: 10;
+    padding: 0 20px;
+
+    &__header {
+      width: 100%;
+      position: relative;
+
+      h1 {
+        padding-top: 30px;
+        font-size: 28px;
+        font-family: $font-family-title;
+      }
+
+      i {
+        position: absolute;
+        right: 0;
+        top: 40px;
+        font-size: 20px;
+      }
+    }
+
+    &__footer {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 80px;
+    }
+  }
+}

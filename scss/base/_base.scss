@@ -5,7 +5,12 @@ body {
 
 p,
 h1,
-ul {
+ul,
+h1,
+h2,
+h3,
+li,
+a {
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -16,4 +21,8 @@ ul {
 
 button:focus {
     outline: none;
+}
+
+* {
+    box-sizing: border-box;
 }
