@@ -1,16 +1,12 @@
 .recipe {
-  flex: 1 0 100%;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
+  @include mflex(100%);
+  @include all-width(100%);
 
   &__title {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 200;
     padding-top: 40px;
-    margin-block-start: 0;
-    margin-block-end: 0;
   }
 
   &__separator {
@@ -35,12 +31,12 @@
 
       &__wrapper {
         padding: 10px;
-        flex: 1 0 calc(90% - 60px);
+        @include mflex(calc(90% - 60px));
 
         &__title {
           margin-bottom: 5px;
           font-weight: bold;
-          font-weight: 18px;
+          font-size: 18px;
         }
 
         &__caption {
@@ -51,7 +47,7 @@
       }
 
       &__pricing {
-        flex: 1 0 calc(10% + 60px);
+        @include mflex(calc(10% + 60px));
         justify-content: flex-end;
         align-items: flex-end;
         width: fit-content;
@@ -68,11 +64,9 @@
       }
 
       &__selection {
-        flex: 1 0 auto;
+        @include mflex(auto);
         background-color: $bck-new-restaurant;
-        width: 0;
-        min-width: 0;
-        max-width: 0;
+        @include all-width(0);
         display: flex;
         justify-content: center;
         transition: width ease-in-out 1s;
@@ -107,7 +101,7 @@
       }
 
       &:hover &__pricing {
-        flex: 1 0 10%;
+        @include mflex(10%);
       }
 
       &:hover &__selection {
@@ -120,11 +114,9 @@
     }
   }
 
-  @media only screen and (min-width: 1040px) {
-    flex: 1 0 30%;
-    width: 30%;
-    min-width: 30%;
-    max-width: 30%;
+  @include mquery-min(1040px) {
+    @include mflex(30%);
+    @include all-width(30%);
   }
 }
 
@@ -148,15 +140,11 @@
 
 @keyframes animSelect {
   0% {
-    width: 0;
-    min-width: 0;
-    max-width: 0;
+    @include all-width(0);
   }
 
   100% {
-    width: 60px;
-    min-width: 60px;
-    max-width: 60px;
+    @include all-width(60px);
   }
 }
 

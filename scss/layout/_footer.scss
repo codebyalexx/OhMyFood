@@ -8,14 +8,13 @@
         font-family: $font-family-title;
         font-size: 18px;
 
-        @media only screen and (min-width: 700px) {
+        @include mquery-min(700px) {
             text-align: center;
         }
     }
 
     &__elements {
         list-style: none;
-        padding-inline-start: 0;
 
         &__element {
             &:not(:nth-child(1)) {
@@ -34,7 +33,7 @@
             }
         }
 
-        @media only screen and (min-width: 700px) {
+        @include mquery-min(700px) {
             max-width: 700px;
             margin-right: auto;
             margin-left: auto;

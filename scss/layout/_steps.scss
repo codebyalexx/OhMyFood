@@ -1,74 +1,73 @@
 .steps {
-    padding: 50px 20px 65px 20px;
-    background-color: $bck-document;
+  padding: 50px 20px 65px 20px;
+  background-color: $bck-document;
 
-    &__title {
-        color: $font-color-main;
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 30px;
-    }
+  &__title {
+    color: $font-color-main;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
 
-    &__list {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 
-        &__element {
-            position: relative;
-            height: 75px;
-            flex: 1 0 100%;
+    &__element {
+      position: relative;
+      height: 75px;
+      @include mflex(100%);
 
-            &:not(:nth-child(1)) {
-                margin-top: 23px;
-            }
+      &:not(:nth-child(1)) {
+        margin-top: 23px;
+      }
 
-            &__numbering {
-                background-color: $bck-highlight;
-                height: 25px;
-                width: 25px;
-                border-radius: 100%;
-                position: absolute;
-                top: 28px;
-                left: 0px;
+      &__numbering {
+        background-color: $bck-highlight;
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+        position: absolute;
+        top: 28px;
+        left: 0px;
 
-                p {
-                    color: $font-color-alt;
-                    font-weight: 200;
-                    font-size: 14px;
-                    text-align: center;
-                    margin-top: 5px;
-                }
-            }
-
-            &__content {
-                border-radius: 12.5px;
-                background-color: $bck-primary;
-                height: 75px;
-                margin-left: 12.5px;
-
-                &__text {
-                    color: $font-color-main;
-                    font-weight: bold;
-                    font-size: 16px;
-                    padding: 30px 0 0 35px;
-
-                    i {
-                        padding-right: 25px;
-                    }
-                }
-            }
-
-            @media only screen and (min-width: 700px) {
-                flex: 1 0 calc(45% - 20px);
-                width: calc(45% - 20px);
-                //max-width: calc(45% - 20px);
-                margin-top: 20px;
-
-                &:nth-child(2n) {
-                    margin-left: 20px;
-                }
-            }
+        p {
+          color: $font-color-alt;
+          font-weight: 200;
+          font-size: 14px;
+          text-align: center;
+          margin-top: 5px;
         }
+      }
+
+      &__content {
+        border-radius: 12.5px;
+        background-color: $bck-primary;
+        height: 75px;
+        margin-left: 12.5px;
+
+        &__text {
+          color: $font-color-main;
+          font-weight: bold;
+          font-size: 16px;
+          padding: 30px 0 0 35px;
+
+          i {
+            padding-right: 25px;
+          }
+        }
+      }
+
+      @include mquery-min(700px) {
+        @include mflex(calc(45% - 20px));
+        width: calc(45% - 20px);
+        margin-top: 20px;
+
+        &:nth-child(2n) {
+          margin-left: 20px;
+        }
+      }
     }
+  }
 }

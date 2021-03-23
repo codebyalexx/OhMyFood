@@ -1,0 +1,19 @@
+.container-responsive-margin {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+
+  @include mquery-min(1100px) {
+    @include all-width(1000px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mquery-min(1300px) {
+    @include all-width(1200px);
+  }
+
+  @include mquery-min(1500px) {
+    @include all-width(1400px);
+  }
+}
